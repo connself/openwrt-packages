@@ -111,6 +111,8 @@ jobs:
         (
         svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-adguardhome luci-app-adguardhome
         svn export https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome adguardhome
+        git clone --depth 1 https://github.com/linkease/istore && mv -n istore/luci/* ./; rm -rf istore
+        svn export https://github.com/linkease/istore-ui/trunk/app-store-ui app-store-ui
         )    
         git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
         git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns
